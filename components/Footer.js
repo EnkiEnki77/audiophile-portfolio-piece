@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'next/link'
 import styled from 'styled-components'
 import { AiFillFacebook } from 'react-icons/ai';
 import { AiOutlineTwitter } from 'react-icons/ai';
-import { BsInstagram } from 'react-icons/bs';
+import {BsInstagram}  from 'react-icons/bs';
 import MainLogo from '../assets/home/mobile/audiophile.png'
 
 const Footer = () => {
@@ -12,10 +12,10 @@ const Footer = () => {
       <Logo src={MainLogo}/>
       <nav>
         <ul>
-          <Link to="/"><LI>Home</LI></Link>
-          <Link to="/category/headphones"><LI>HEADPHONES</LI></Link>
-          <Link to="/category/speakers"><LI>SPEAKERS</LI></Link>
-          <Link to="/category/earphones"><LI>EARPHONES</LI></Link>
+          <LI>Home</LI>
+          <LI>HEADPHONES</LI>
+          <LI>SPEAKERS</LI>
+          <LI>EARPHONES</LI>
         </ul>
       </nav>
       <FooterDescript>Audiophile is an all in one stop to fulfill your audio needs. We&aposre a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.</FooterDescript>

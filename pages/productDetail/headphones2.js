@@ -1,9 +1,24 @@
-import React from 'react'
 
-const headphones2 = () => {
+import React from 'react'
+import styled from 'styled-components'
+import Footer from '../Components/Footer'
+import HeadWithNav from '../Components/HeadWithNav'
+import MobileNav from '../Components/MobileNav'
+import SiteMessage from '../Components/SiteMessage'
+
+const ProductDetailHeadphones2 = () => {
   return (
-    <div>headphones2</div>
+    <ProductDetailHeadphones2Container>
+        <HeadWithNav/>
+        <MobileNav/>
+        <SiteMessage/>
+        <Footer/>
+    </ProductDetailHeadphones2Container>
   )
 }
 
-export default headphones2
+export const ProductDetailHeadphones2Container = styled.div`
+  
+`;
+
+export default ProductDetailHeadphones2

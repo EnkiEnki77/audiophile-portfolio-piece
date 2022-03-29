@@ -1,9 +1,24 @@
-import React from 'react'
 
-const speakers2 = () => {
+import React from 'react'
+import styled from 'styled-components'
+import Footer from '../Components/Footer'
+import HeadWithNav from '../Components/HeadWithNav'
+import MobileNav from '../Components/MobileNav'
+import SiteMessage from '../Components/SiteMessage'
+
+const ProductDetailSpeakers2 = () => {
   return (
-    <div>speakers2</div>
+    <ProductDetailSpeakers2Container>
+        <HeadWithNav/>
+        <MobileNav/>
+        <SiteMessage/>
+        <Footer/>
+    </ProductDetailSpeakers2Container>
   )
 }
 
-export default speakers2
+export const ProductDetailSpeakers2Container = styled.div`
+  
+`;
+
+export default ProductDetailSpeakers2
