@@ -20,7 +20,7 @@ const Home = () => {
         <HomeContainer>
             <HeadWithNav/>
             <HeroContainer>
-                <HeroImg src={HeroImage} layout='fill'/>
+                <HeroImg src={HeroImage} layout='fill' style={{zIndex: '-1'}}/>
                 <NewProduct>NEW PRODUCT</NewProduct>
                 <HeroItem>XX99 Mark II HeadphoneS</HeroItem>
                 <HeroDescript>Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</HeroDescript>
@@ -32,18 +32,18 @@ const Home = () => {
                     <div style={{marginTop: '55px', marginBottom: '8px'}}><Item1img src={Item1IMG} width='173px' height='207px'  /></div>
                     <Item1Item>ZX9 SPEAKER</Item1Item>
                     <Item1Descript>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</Item1Descript>
-                    <Button2 route='/product detail/speakers1' item1={true}>see product</Button2>
+                    <Button2 route='/productDetail/speakers1' item1={true}>see product</Button2>
                 </Item1>
                 <Item2>
                     <Item2img src={Item2IMG} layout='fill'/>
                     <Item2Item>ZX7 SPEAKER</Item2Item>
-                    <Button2 item2 = {true} route='/product detail/speakers2'>see product</Button2>
+                    <Button2 item2 = {true} route='/productDetail/speakers2'>see product</Button2>
                 </Item2>
                 <Item3>
                     <Item3img src={Item3IMG}/>
                     <Item3Info>
                         <Item3Item>YX1 EARPHONES</Item3Item>
-                        <Button2 item2 = {true} route='/product detail/earphones'>see product</Button2>
+                        <Button2 item2 = {true} route='/productDetail/earphones'>see product</Button2>
                     </Item3Info>
                 </Item3>
             </ItemShowcase>

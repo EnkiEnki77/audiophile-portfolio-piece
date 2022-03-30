@@ -10,7 +10,7 @@ import Image from 'next/image'
 const Footer = () => {
   return (
     <FooterContainer>
-      <Logo src={MainLogo}/>
+      <div style={{position: 'relative', height: '100px'}}><Logo src={MainLogo} /></div>
       <nav>
         <ul>
           <LI>Home</LI>

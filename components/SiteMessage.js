@@ -18,7 +18,7 @@ export const SiteMContainer = styled.div`
  height: 698px;
   padding: 0 1.5rem;
   margin-top: 120px;
-  margin-bottom: 30px;
+  margin-bottom: 110px;
 `;
 
 export const  SiteMImg = styled(Image)`

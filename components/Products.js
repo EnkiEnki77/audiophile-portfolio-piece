@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Product from './Product';
-import ProductImage from '../assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg'
+
 
 const Products = (props) => {
     
@@ -10,7 +10,7 @@ const Products = (props) => {
         <CategoryHeader>
             <Category>{props.category}</Category>
         </CategoryHeader>
-        <Product image = {ProductImage} name = 'XX99 Mark II Headphones' description ='The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.' />
+        <Product image = {props.image} name = {props.name} description = {props.description}/>
     </ProductContainer>
   )
 }
@@ -18,6 +18,7 @@ const Products = (props) => {
 export const  ProductContainer = styled.div`
   width: 100%;
   padding-top:90px;
+  margin-bottom: 88px;
 `;
 
 export const CategoryHeader =  styled.div`

@@ -1,10 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
+import Link from 'next/link'
+
 
 const Button2 = (props) => {
   
   return (
-    <Button item1={props.item1}>{props.children}</Button>
+        <Button item1={props.item1}>
+          {props.children}</Button>
+     
   )
 }
 

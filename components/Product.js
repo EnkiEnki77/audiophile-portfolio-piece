@@ -1,6 +1,7 @@
 import {React, useState} from 'react'
 import styled from 'styled-components'
 import Button1 from './Button1'
+import Image from 'next/image'
 
 const Product = (props) => {
     const [newItem, setNewItem] = useState(true)
@@ -10,7 +11,7 @@ const Product = (props) => {
         {newItem && <NewProduct>NEW PRODUCT</NewProduct>}
         <ProductName>{props.name}</ProductName>
         <ProductDescript>{props.description}</ProductDescript>
-        <Button1/>
+        <Button1>see product</Button1>
     </ProductContainer>
   )
 }
@@ -19,14 +20,14 @@ export const ProductContainer = styled.div`
   width: 100%;
   padding:0 1.5rem;
   margin-top: 64px;
-  margin-bottom:120px;
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
 `;
 
-export const ProductImg = styled.img`
+export const ProductImg = styled(Image)`
   height: 352px;
   width:100%;
   margin-bottom: 8px;

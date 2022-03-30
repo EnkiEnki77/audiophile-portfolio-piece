@@ -2,13 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import buttonArrow from '../assets/Path2.png'
 import Image from 'next/image'
+import Link from 'next/link'
 
-const Button3 = () => {
+const Button3 = (props) => {
   return (
-    <Button3Cont>
-        <Button3Text>SHOP</Button3Text>
-        <Button3Arrow src={buttonArrow}/>
-    </Button3Cont>
+    
+        <Button3Cont>
+            <Button3Text>SHOP</Button3Text>
+            <Button3Arrow src={buttonArrow}/>
+        </Button3Cont>
+     
   )
 }
 
