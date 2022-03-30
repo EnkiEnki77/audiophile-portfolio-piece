@@ -1,10 +1,10 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import Footer from '../Components/Footer'
-import HeadWithNav from '../Components/HeadWithNav'
-import MobileNav from '../Components/MobileNav'
-import SiteMessage from '../Components/SiteMessage'
+import Footer from '../../Components/Footer'
+import HeadWithNav from '../../Components/HeadWithNav'
+import MobileNav from '../../Components/MobileNav'
+import SiteMessage from '../../Components/SiteMessage'
 
 const ProductDetailHeadphones3 = () => {
   return (
