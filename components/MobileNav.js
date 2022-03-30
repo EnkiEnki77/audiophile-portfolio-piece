@@ -4,27 +4,28 @@ import Button3 from './Button3'
 import Headphones from '../assets/cart/image-removebg-preview(41).png'
 import Speakers from '../assets/cart/image-removebg-preview(38).png'
 import Earphones from '../assets/cart/image-removebg-preview(42).png'
+import Image from 'next/image'
 
 const MobileNav = (props) => {
   return (
     <NavContainer header = {props.header}>
         <NavUl>
             <NavItem>
-                <NavImg src={Headphones}/>
+                <div style={{position: 'absolute', top: '0'}} ><NavImg src={Headphones} width='80px' height='104px' /></div>
                 <Container>
                     <NavCategory>Headphones</NavCategory>
                     <Button3 route='/category/headphones'/>
                 </Container>
             </NavItem>
             <NavItem>
-                <NavImg src={Speakers}/>
+            <div style={{position: 'absolute', top: '0'}} ><NavImg src={Speakers} width='85px' height='104px' /></div>
                 <Container>
                     <NavCategory>Speakers</NavCategory>
                     <Button3 route='/category/speakers'/>
                 </Container>
             </NavItem>
             <NavItem>
-                <NavImg src={Earphones}/>
+            <div style={{position: 'absolute', top: '0'}} ><NavImg src={Earphones} width='100px' height='104px' /></div>
                 <Container>
                     <NavCategory>Earphones</NavCategory>
                     <Button3 route='/category/earphones'/>
@@ -77,11 +78,15 @@ export const Container = styled.div`
   padding-bottom: 22px;
 `;
 
-export const  NavImg = styled.img`
-  height: 104px;
-width: 90px;
+export const  NavImg = styled(Image)`
+  /* height: 104px ;
+width: 90px ;
 position: absolute;
-top: 0;
+top: 0; */
+
+/* img{
+  position: absolute;
+} */
 `;
 
 export const  NavCategory =  styled.h2`

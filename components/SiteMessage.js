@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import SiteMIMG from '../assets/shared/mobile/image-best-gear.jpg'
+import Image from 'next/image'
 
 const SiteMessage = () => {
   return (
@@ -17,9 +18,10 @@ export const SiteMContainer = styled.div`
  height: 698px;
   padding: 0 1.5rem;
   margin-top: 120px;
+  margin-bottom: 30px;
 `;
 
-export const  SiteMImg = styled.img`
+export const  SiteMImg = styled(Image)`
   height: 300px;
 width: 327px;
 left: 0px;

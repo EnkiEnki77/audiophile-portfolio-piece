@@ -11,38 +11,39 @@ import Item1IMG from '../assets/home/mobile/image-speaker-zx9.png'
 import Item2IMG from '../assets/home/mobile/image-speaker-zx7.jpg'
 import Item3IMG from '../assets/home/mobile/image-earphones-yx1.jpg'
 import HeadWithNav from '../Components/HeadWithNav'
+import Image from 'next/image'
 
 
 const Home = () => {
-    
+    console.log(HeroImage)
     return (
         <HomeContainer>
             <HeadWithNav/>
             <HeroContainer>
-                <HeroImg src={HeroImage}/>
+                <HeroImg src={HeroImage} layout='fill'/>
                 <NewProduct>NEW PRODUCT</NewProduct>
                 <HeroItem>XX99 Mark II HeadphoneS</HeroItem>
                 <HeroDescript>Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</HeroDescript>
-                <Button1 route='/productDetail/headphones2'/>
+                <Button1 route='/productDetail/headphones2'>see product</Button1>
             </HeroContainer>
             <MobileNav/>
             <ItemShowcase>
                 <Item1>
-                    <Item1img src={Item1IMG}/>
+                    <div style={{marginTop: '55px', marginBottom: '8px'}}><Item1img src={Item1IMG} width='173px' height='207px'  /></div>
                     <Item1Item>ZX9 SPEAKER</Item1Item>
                     <Item1Descript>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</Item1Descript>
-                    <Button2 item1={true} route='/product detail/speakers1'/>
+                    <Button2 route='/product detail/speakers1' item1={true}>see product</Button2>
                 </Item1>
                 <Item2>
-                    <Item2img src={Item2IMG}/>
+                    <Item2img src={Item2IMG} layout='fill'/>
                     <Item2Item>ZX7 SPEAKER</Item2Item>
-                    <Button2 item2 = {true} route='/product detail/speakers2'/>
+                    <Button2 item2 = {true} route='/product detail/speakers2'>see product</Button2>
                 </Item2>
                 <Item3>
                     <Item3img src={Item3IMG}/>
                     <Item3Info>
                         <Item3Item>YX1 EARPHONES</Item3Item>
-                        <Button2 item2 = {true} route='/product detail/earphones'/>
+                        <Button2 item2 = {true} route='/product detail/earphones'>see product</Button2>
                     </Item3Info>
                 </Item3>
             </ItemShowcase>
@@ -54,15 +55,15 @@ const Home = () => {
 
 export const HomeContainer = styled.div`
   width: 100%;
-
+  
   
 `;
 
-export const HeroImg = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position:0 -100px;
+export const HeroImg = styled(Image)`
+  /* width: 100%;
+  height: 100%; */
+  /* object-fit: cover; */
+  /* object-position:0 -100px; */
   position: absolute;
   z-index:-1;
 `;
@@ -117,20 +118,21 @@ margin: 0;
 
 mix-blend-mode: normal;
 opacity: 0.75;
-padding: 0 1.5rem;
+width: 70%;
 padding-bottom: 28px;
 `;
 
 export const HeroContainer = styled.div`
 
   width: 100%;
-  height: 510px;
+  height: 610px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: 90px;
+  
 `;
 
 export const HeadMobileNav = styled(MobileNav)`
@@ -142,7 +144,7 @@ export const  ItemShowcase= styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-top: 120px;
+  margin-top: 88px;
 `;
 
 export const  Item1= styled.div`
@@ -157,13 +159,11 @@ export const  Item1= styled.div`
   gap: 24px;
 `;
 
-export const  Item1img= styled.img`
-  height: 207px;
-width: 172.2481689453125px;
+export const  Item1img= styled(Image)`
+  
 
-border-radius: 0px;
-margin-top: 55px;
-margin-bottom: 8px;
+
+
 `;
 
 export const  Item1Item= styled.h2`
@@ -210,10 +210,11 @@ export const  Item2= styled.div`
   justify-content: center;
   overflow: hidden;
   gap: 32px;
+  padding-left: 1.5rem;
   
 `;
 
-export const  Item2img= styled.img`
+export const  Item2img= styled(Image)`
   width: 100%;
   height: 100%;
   position: absolute;
@@ -231,7 +232,7 @@ text-transform: uppercase;
 
 color: #000000;
 margin: 0;
-margin-left: 1.5rem;
+/* margin-left: 1.5rem; */
 `;
 
 export const Item3 = styled.div`
@@ -240,9 +241,10 @@ export const Item3 = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 `;
 
-export const  Item3img= styled.img`
+export const  Item3img= styled(Image)`
   width: 100%;
   height: 200px;
   border-radius: 8px;
@@ -257,6 +259,7 @@ export const  Item3Info= styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 32px;
+  padding-left: 1.5rem;
 `;
 
 export const  Item3Item= styled.h2`
@@ -267,7 +270,7 @@ font-size: 28px;
 line-height: 38px;
 letter-spacing: 2px;
 text-transform: uppercase;
-padding-left: 1.5rem;
+
 
 color: #000000;
 margin: 0;

@@ -5,6 +5,7 @@ import { AiFillFacebook } from 'react-icons/ai';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import {BsInstagram}  from 'react-icons/bs';
 import MainLogo from '../assets/home/mobile/audiophile.png'
+import Image from 'next/image'
 
 const Footer = () => {
   return (
@@ -33,7 +34,7 @@ export const FooterContainer = styled.div`
   width: 100%;
   height: 654px;
   background-color: #000000;
-  margin-top: 120px;
+  /* margin-top: 120px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,7 +49,7 @@ export const FooterContainer = styled.div`
   }
 `;
 
-export const  Logo= styled.img`
+export const  Logo= styled(Image)`
   
 `;
 
