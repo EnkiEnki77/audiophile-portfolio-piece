@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import buttonArrow from '../assets/Path2.png'
+import buttonArrow from '../public/assets/Path2.png'
 import Image from 'next/image'
 import Link from 'next/link'
 

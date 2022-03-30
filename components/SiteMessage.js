@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import SiteMIMG from '../assets/shared/mobile/image-best-gear.jpg'
+import SiteMIMG from '../public/assets/shared/mobile/image-best-gear.jpg'
 import Image from 'next/image'
 
 const SiteMessage = () => {

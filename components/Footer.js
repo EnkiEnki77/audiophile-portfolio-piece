@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { AiFillFacebook } from 'react-icons/ai';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import {BsInstagram}  from 'react-icons/bs';
-import MainLogo from '../assets/home/mobile/audiophile.png'
+import MainLogo from '../public/assets/home/mobile/audiophile.png'
 import Image from 'next/image'
 
 const Footer = () => {

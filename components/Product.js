@@ -3,12 +3,14 @@ import styled from 'styled-components'
 import Button1 from './Button1'
 import Image from 'next/image'
 
+
+
 const Product = (props) => {
-    const [newItem, setNewItem] = useState(true)
+    
   return (
     <ProductContainer>
-        <ProductImg src={props.image}/>
-        {newItem && <NewProduct>NEW PRODUCT</NewProduct>}
+        <div style={{ marginBottom: '8px' }}><ProductImg src={props.image}  width='327px' height='356px'/></div>
+        {props.new && <NewProduct>NEW PRODUCT</NewProduct>}
         <ProductName>{props.name}</ProductName>
         <ProductDescript>{props.description}</ProductDescript>
         <Button1>see product</Button1>
@@ -28,9 +30,8 @@ export const ProductContainer = styled.div`
 `;
 
 export const ProductImg = styled(Image)`
-  height: 352px;
-  width:100%;
-  margin-bottom: 8px;
+  
+  
 `;
 
 export const  NewProduct = styled.h3`

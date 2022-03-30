@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import Button3 from './Button3'
-import Headphones from '../assets/cart/image-removebg-preview(41).png'
-import Speakers from '../assets/cart/image-removebg-preview(38).png'
-import Earphones from '../assets/cart/image-removebg-preview(42).png'
+import Headphones from '../public/assets/cart/image-removebg-preview(41).png'
+import Speakers from '../public/assets/cart/image-removebg-preview(38).png'
+import Earphones from '../public/assets/cart/image-removebg-preview(42).png'
 import Image from 'next/image'
 
 const MobileNav = (props) => {

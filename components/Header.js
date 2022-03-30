@@ -2,7 +2,7 @@ import {React, useState} from 'react'
 import styled from 'styled-components'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import MainLogo from '../assets/home/mobile/audiophile.png'
+import MainLogo from '../public/assets/home/mobile/audiophile.png'
 import  Link  from 'next/link';
 import Image from 'next/image'
 

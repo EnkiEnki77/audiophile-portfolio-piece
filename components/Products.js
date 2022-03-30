@@ -1,16 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
 import Product from './Product';
+import productData from '../public/productData.json'
 
 
 const Products = (props) => {
+  console.log(productData)
+
+  const products = productData.filter(product => product.category === props.category.toLowerCase())
+  console.log(products)
+
+  const images = products.map(product => product.image.mobile.substring(1)) 
+  console.log(images)
     
   return (
-    <ProductContainer>
+    <ProductContainer>  
         <CategoryHeader>
             <Category>{props.category}</Category>
         </CategoryHeader>
-        <Product image = {props.image} name = {props.name} description = {props.description}/>
+        {products.map((product, i) => <Product key={product.id} new={props.new} name={product.name} description={product.description} image={images[i]}/>)}
     </ProductContainer>
   )
 }

@@ -1,27 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
-import Footer from '../../components/Footer';
+import Footer from '../../Components/Footer';
 import HeadWithNav from '../../Components/HeadWithNav';
 import MobileNav from '../../Components/MobileNav';
 import Products from '../../Components/Products';
 import SiteMessage from '../../Components/SiteMessage';
 
-const CategoryHeadphones = () => {
+const CategoryEarphones = () => {
     return (
-        <CategoryHeadphonesContainer>
+        <CategoryEarphonesContainer>
             <HeadWithNav/>
-            <Products category='HEADPHONES'/>
+            <Products category='HEADPHONES' />
             <MobileNav/>
             <SiteMessage/>
             <Footer/>
-        </CategoryHeadphonesContainer>
+        </CategoryEarphonesContainer>
     )
 }
 
-export const CategoryHeadphonesContainer = styled.div`
+export const CategoryEarphonesContainer = styled.div`
   width: 100%;
 `;
 
-
-
-export default CategoryHeadphones
+export default CategoryEarphones
