@@ -17,7 +17,7 @@ export const SiteMContainer = styled.div`
   width:100%;
  height: 698px;
   padding: 0 1.5rem;
-  margin-top: 120px;
+  margin-top: 88px;
   margin-bottom: 110px;
 `;
 
