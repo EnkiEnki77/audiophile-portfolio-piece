@@ -59,12 +59,7 @@ export const HomeContainer = styled.div`
 `;
 
 export const HeroImg = styled(Image)`
-  /* width: 100%;
-  height: 100%; */
-  /* object-fit: cover; */
-  /* object-position:0 -100px; */
-  position: absolute;
-  z-index:-1;
+
 `;
 
 export const NewProduct = styled.h3`
@@ -160,9 +155,6 @@ export const  Item1= styled.div`
 
 export const  Item1img= styled(Image)`
   
-
-
-
 `;
 
 export const  Item1Item= styled.h2`
@@ -269,8 +261,6 @@ font-size: 28px;
 line-height: 38px;
 letter-spacing: 2px;
 text-transform: uppercase;
-
-
 color: #000000;
 margin: 0;
 `;

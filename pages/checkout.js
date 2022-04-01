@@ -55,23 +55,26 @@ const Checkout = () => {
                 <SummaryTitle>Summary</SummaryTitle>
                 <CartItemCont>
                     <CartItem/>
+                    <CartItem/>
+                    <CartItem/>
+                    <CartItem/>
                 </CartItemCont>
                 <TotalsCont>
                     <TotalCont>
                         <Total>Total</Total>
-                        <TotalNum></TotalNum>
+                        <TotalNum>$5000</TotalNum>
                     </TotalCont>
                     <ShippingCont>
-                        <Shipping>Total</Shipping>
-                        <ShippingNum></ShippingNum>
+                        <Shipping>Shipping</Shipping>
+                        <ShippingNum>$5000</ShippingNum>
                     </ShippingCont>
                     <VatCont>
-                        <Vat>Total</Vat>
-                        <VatNum></VatNum>
+                        <Vat>VAT(included)</Vat>
+                        <VatNum>$5000</VatNum>
                     </VatCont>
                     <GrandTotalCont>
-                        <GrandTotal>Total</GrandTotal>
-                        <GrandTotalNum></GrandTotalNum>
+                        <GrandTotal>Grand Total</GrandTotal>
+                        <GrandTotalNum>$5000</GrandTotalNum>
                     </GrandTotalCont>
                 </TotalsCont>
                 <CheckoutButton>Continue and pay</CheckoutButton>
@@ -148,7 +151,7 @@ const SectionTitle = styled(Subtitle)`
 
 const SummaryCont = styled.div`
   width: 100%;
-  height: 612px;
+  
   border-radius: 8px;
   background-color: white;
   margin-top: 32px;
@@ -161,7 +164,7 @@ const SummaryCont = styled.div`
 const CartItemCont = styled.div`
   display: flex;
   flex-flow: column;
-
+  gap: 24px;
 `;
 
 const TotalsCont = styled.div`
@@ -173,54 +176,82 @@ const SummaryTitle = styled(H6)`
 `;
 
 const TotalCont = styled.div`
-  
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
 `;
 
 const Total = styled.p`
-  
+  font-weight: 500;
+font-size: 15px;
+line-height: 25px;
+color: #000000;
+opacity: 0.5;
+margin: 0;
 `;
 
-const TotalNum = styled(H4)`
+const TotalNum = styled(H6)`
   
 `;
 
 const ShippingCont = styled.div`
-  
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
 `;
 
 const Shipping = styled.p`
-  
+    font-weight: 500;
+font-size: 15px;
+line-height: 25px;
+color: #000000;
+opacity: 0.5;
+margin: 0;
 `;
 
-const ShippingNum = styled(H4)`
+const ShippingNum = styled(H6)`
   
 `;
 
 const VatCont = styled.div`
-  
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
 `;
 
 const Vat = styled.p`
-  
+    font-weight: 500;
+font-size: 15px;
+line-height: 25px;
+color: #000000;
+opacity: 0.5;
+margin: 0;
 `;
 
-const VatNum = styled(H4)`
+const VatNum = styled(H6)`
   
 `;
 
 const GrandTotalCont = styled.div`
-  
+  display: flex;
+  justify-content: space-between;
 `;
 
 const GrandTotal = styled.p`
-  
+    font-weight: 500;
+font-size: 15px;
+line-height: 25px;
+color: #000000;
+opacity: 0.5;
+margin: 0;
 `;
 
-const GrandTotalNum = styled(H4)`
-  
+const GrandTotalNum = styled(H6)`
+  color: ${props => props.theme.body};
 `;
 
 const CheckoutButton = styled(Button1)`
   width: 100%;
 `;
+
 export default Checkout
