@@ -15,7 +15,8 @@ const TextInput = () => {
 
  const Container  = styled.div`
   height: 81px;
-  width: 309px;
+  width: 100%;
+  max-width: 309px;
   display: flex;
   gap:9px 0;
   flex-flow: row wrap;

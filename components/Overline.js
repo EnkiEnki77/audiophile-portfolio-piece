@@ -3,11 +3,11 @@ import styled from 'styled-components';
 
 export const Overline = ({className, children}) => {
   return (
-    <Paragraph className={className}>{children}</Paragraph>
+    <OverlineCont className={className}>{children}</OverlineCont>
   )
 }
 
-const Paragraph = styled.p`
+const OverlineCont = styled.p`
   font-size: 14px;
   line-height:19px;
   letter-spacing:10px;

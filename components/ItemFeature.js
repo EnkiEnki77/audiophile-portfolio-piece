@@ -1,9 +1,7 @@
 import React from 'react'
 import Accessories from './Accessories'
 import { Body } from './Body';
-import { H3 } from './H3';
 import styled from 'styled-components';
-import { H4 } from './H4';
 import { H5 } from './H5';
 
 const ItemFeature = (props) => {

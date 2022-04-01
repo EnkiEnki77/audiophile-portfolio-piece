@@ -11,12 +11,7 @@ const RadioInput = () => {
   )
 }
 
- const Container  = styled.div`
-  height: 81px;
-  width: 309px;
-  display: flex;
-  flex-flow: row wrap;
-`;
+
 
  const Label = styled.label`
  font-weight: 700;
@@ -46,7 +41,8 @@ border: 1px solid #CFCFCF;
 box-sizing: border-box;
 border-radius: 8px;
 height: 56px;
-width: 309px;
+width: 100%;
+  max-width: 309px;
 padding-left: 24px;
 display: flex;
 align-items: center;

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'next/link'
 import styled from 'styled-components'
 import { AiFillFacebook } from 'react-icons/ai';
 import { AiOutlineTwitter } from 'react-icons/ai';

@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import Link from 'next/link'
 
-const Button1 = (props) => {
-  console.log(props)
+
+const Button1 = ({className, children}) => {
+ 
   return (
     
-        <Button>{props.children}</Button>
+        <Button className={className}>{children}</Button>
   
   )
 }

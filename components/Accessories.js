@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Accessories = (props) => {
   return (
-    <AccessoryCont>
+    <AccessoryCont>s
       <AccCount>{`${props.quantity}x`}</AccCount>
       <Accesory>{props.item}</Accesory>
     </AccessoryCont>

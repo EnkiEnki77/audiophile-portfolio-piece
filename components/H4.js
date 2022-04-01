@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
 
-export const H4 = (props) => {
+export const H4 = ({className, children}) => {
   return (
-    <Head4>{props.children}</Head4>
+    <Head4 className={className}>{children}</Head4>
   )
 }
 
